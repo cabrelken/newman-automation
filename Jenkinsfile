@@ -13,7 +13,7 @@ pipeline {
                     
                     // Start Docker Compose in detached mode with the custom network
                      sh 'docker ps'
-                   // sh 'docker stop 8bad87db8812'
+                   sh 'docker stop 8bad87db8812'
                     sh 'docker compose down'
                    
                     sh 'docker compose up -d'
